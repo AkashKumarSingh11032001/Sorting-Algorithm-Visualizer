@@ -19,6 +19,7 @@ label{
     background-color: rgb(63, 70, 70);
  }
  #array-space{
+    height: 50%;
     width: 100%;
     padding: 20px;
     display: flex;
