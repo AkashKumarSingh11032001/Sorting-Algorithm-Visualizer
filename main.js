@@ -65,7 +65,7 @@ function text_error() {
     }
     if (err) {
         text_error_text.innerHTML = "<i class=\"fa fa-exclamation-triangle\"> </i> " + err;
-        modal_text.style.borderColor = "red";
+        modal_text.style.borderColor = "black";
         return false;
     }
     return true;
@@ -85,7 +85,7 @@ function size_error() {
     }
     if (err) {
         size_error_text.innerHTML = "<i class=\"fa fa-exclamation-triangle\"> </i> " + err;
-        modal_size.style.borderColor = "red";
+        modal_size.style.borderColor = "black";
         return false;
     }
 }
