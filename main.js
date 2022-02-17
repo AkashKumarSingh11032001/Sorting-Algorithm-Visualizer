@@ -129,7 +129,7 @@ function generate_new_array() {
     change_speed();
     for (let i = 0; i < total_size; i++) {
         if (is_valid) bar_len[i] = custom_array[i];
-        else bar_len[i] = Math.floor(Math.random() * 560 + 20);
+        else bar_len[i] = Math.floor(Math.random() * 560 + 10);
         bar_div[i] = document.createElement("div");
         space.appendChild(bar_div[i]);
         apply_style(bar_div[i], "lightpink", bar_len[i]);
