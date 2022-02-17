@@ -132,7 +132,7 @@ function generate_new_array() {
         else bar_len[i] = Math.floor(Math.random() * 560 + 20);
         bar_div[i] = document.createElement("div");
         space.appendChild(bar_div[i]);
-        apply_style(bar_div[i], "skyblue", bar_len[i]);
+        apply_style(bar_div[i], "lightpink", bar_len[i]);
     }
 }
 
@@ -173,7 +173,7 @@ function disable() {
 
 function enable() {
     window.setTimeout(function () {
-        setting[2].innerHTML = "<i class=\"fa fa-play\" aria-hidden=\"true\"> </i>  RUN ALGO!";
+        setting[2].innerHTML = "<i class=\"fa fa-play\" aria-hidden=\"true\"> </i>  RUN SORT!";
         for (let i = 0; i < 6; i++) {
             setting[i].removeAttribute('disabled');
             setting[i].style = "cursor: pointer;";
@@ -185,8 +185,8 @@ function enable() {
 
 // swap utility function . makes red before swap .
 function swap(id1, id2, col1, col2) {
-    update_bar(bar_div[id1], "red", bar_len[id1]);
-    update_bar(bar_div[id2], "red", bar_len[id2]);
+    update_bar(bar_div[id1], "black", bar_len[id1]);
+    update_bar(bar_div[id2], "black", bar_len[id2]);
     [bar_len[id1], bar_len[id2]] = [bar_len[id2], bar_len[id1]];
     update_bar(bar_div[id1], col1, bar_len[id1]);
     if (id1 != id2) update_bar(bar_div[id2], col2, bar_len[id2]);
